@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahussein</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a href="#" id="navbar__logo">Wahussein</a>
+        </div>
+    </nav>
+
+    <main class="auth-page">
+        <div class="auth-card">
+            <h1 class="auth-card__title">Create Account</h1>
+            <p class="auth-card__subtitle">Sign up to get started</p>
+
+            <form id="signup-form" novalidate>
+                <div class="form__group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="button" id="creatUserSubmitBtn" class="btn btn--primary btn--full">Create Account</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
